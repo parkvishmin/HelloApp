@@ -2,18 +2,10 @@ public class HelloApp {
 
     public static void main(String[] args) {
 
-        // Check if user provided a name
-        if (args.length > 0) {
+        // Assign name using ternary operator
+        String name = (args.length > 0) ? args[0] : "World";
 
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-
-        } else {
-
-            System.out.println("Hello, World!");
-
-        }
+        System.out.println("Hello, " + name + "!");
 
     }
-
 }
